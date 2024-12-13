@@ -8,21 +8,68 @@
   
   <title>Frontend Mentor | QR code component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- Lien de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Lien d'Outfit -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .container { display: grid;
+                 place-items: center;
+                 height: 100vh;
+    }
+
+    .attribution { font-size: 11px; 
+                   text-align: center; 
+    }
     .attribution a { color: hsl(228, 45%, 44%); }
+    body { background-color: hsl(212, 45%, 89%); }
+    .card { width: 320px;
+            height: 499px;
+            background-color: hsl(0, 0%, 100%); 
+            align-content: center;
+            text-align: center;
+            border-radius: 20px;
+    }
+    .image-qr-code { width: 288px;
+                    height: 288px;
+                    border-radius: 10px;
+    }
+    .outfit-title { font-family: "Outfit", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 700;
+                    font-style: normal;
+    }
+    .outfit-description { font-family: "Outfit", sans-serif;
+                    font-optical-sizing: auto;
+                    font-style: normal;
+    }
+    .title-card { font-size: 22px;
+                  letter-spacing: 0px;
+                  line-height: 120%;
+                  color: hsl(218, 44%, 22%);
+    }
+    .description-card { font-size: 15px;
+                        letter-spacing: 0.2px;
+                        line-height: 140%;
+                        color: hsl(216, 15%, 48%);
+    }
   </style>
 </head>
 <body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <section class="container">
+      <div class="card">
+        <img src="images/image-qr-code.png" alt="qr-code"class="image-qr-code">
+        <p class="title-card outfit-title">Sed egestas, ante et vulputate volutpat, eros pede.</p>
+        <p class="description-card outfit-description">Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.</p>
+      </div>
+      <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="https://github.com/badr-lead">badr-lead</a>.
+      </div>
+    </section>
+  </main>
 </body>
 </html>
